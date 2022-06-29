@@ -1,0 +1,313 @@
+@media screen and (max-width: 760px) {
+    .topnav {
+        position: fixed;
+        top: 47px;
+        left: -100%;
+        right: 0;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        border-radius: 10px;
+        background-color: rgb(34, 27, 34);
+        transition: 1s;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    .menu {
+        float: right;
+        display: block;
+    }
+
+    .navbar {
+        padding-top: 0px;
+    }
+
+    .content {
+        transform: translateY(-65%);
+    }
+
+    .pretext {
+        line-height: 20px;
+    }
+
+    .about .main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 20px;
+    }
+
+    .contact h3 {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (min-width: 260px) {
+    .content {
+        top: 65%;
+    }
+
+    .hb {
+        font-size: 60px;
+    }
+
+    .pretext {
+        font-size: 12px;
+        max-width: 400px;
+        padding-right: 15px;
+    }
+
+    .about {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .about img {
+        max-width: 300px;
+    }
+
+    .summary {
+        max-width: 300px;
+    }
+
+    .summary h2 {
+        font-size: 40px;
+    }
+
+    .service {
+        padding-top: 20px;
+    }
+
+    .box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact h3 {
+        font-size: 30px;
+    }
+
+    .details {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .note {
+        max-width: 250px;
+    }
+
+    .em {
+        letter-spacing: 0;
+    }
+
+    footer {
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    nav ul li.menu {
+        float: right;
+        display: none;
+        margin-right: 100px;
+    }
+
+    .content {
+        top: 35%;
+    }
+
+    .pretext {
+        font-size: 30px;
+        max-width: 900px;
+        padding-right: 20px;
+        margin-bottom: 0px;
+    }
+
+    .about button {
+        margin-left: 435px;
+    }
+
+    .box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 20px;
+    }
+
+    .contact h3 {
+        margin-top: 20px;
+    }
+
+    footer {
+        letter-spacing: 3px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .content {
+        top: 55%;
+    }
+
+    .pretext {
+        max-width: 1000px;
+    }
+
+    .about img {
+        max-width: 450px;
+    }
+
+    .summary {
+        max-width: 900px;
+    }
+
+    .summary h5 {
+        min-width: 500px;
+    }
+
+    .summary p {
+        min-width: 500px;
+    }
+
+    .about button {
+        margin-left: 1080px;
+    }
+
+    .box {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .details {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .contact h3 {
+        font-size: 45px;
+    }
+
+    footer {
+        letter-spacing: 5px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .content {
+        transform: translateY(-45%);
+    }
+
+    .hb {
+        font-size: 50px;
+    }
+
+    .hc {
+        margin-bottom: 30px;
+    }
+
+    .pretext {
+        line-height: 15px;
+    }
+
+    .about img {
+        max-width: 250px;
+    }
+
+    .summary {
+        max-width: 250px;
+    }
+
+    .title h2 {
+        font-size: 50px;
+    }
+
+    .info p {
+        font-size: 18px;
+    }
+
+    .contact h3 {
+        font-size: 20px;
+    }
+
+    .note {
+        max-width: 200px;
+    }
+
+    .em {
+        font-size: 12px;
+    }
+
+    .git {
+        font-size: 12px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .summary h5 {
+        max-width: 400px;
+    }
+
+    .summary p {
+        max-width: 600px;
+    }
+
+    .about button {
+        margin-left: 800px;
+    }
+
+    .info p {
+        font-size: 18px;
+    }
+
+    .details {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .summary h5 {
+        max-width: 400px;
+    }
+}
+
+@media(max-width: 800px) {
+
+    /*.menu .active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .menu .active .bar:nth-child(1){
+        transform: translateY(-8px) rotate(-45deg); 
+    }*/
+    .show {
+        left: 0px;
+        visibility: visible;
+    }
+}
