@@ -69,7 +69,6 @@
 
     .pretext {
         font-size: 12px;
-        max-width: 400px;
     }
 
     .about {
@@ -133,7 +132,6 @@
 
     .pretext {
         font-size: 30px;
-        max-width: 900px;
         margin-bottom: 0px;
     }
 
@@ -164,10 +162,6 @@
 @media screen and (min-width: 1000px) {
     .content {
         top: 55%;
-    }
-
-    .pretext {
-        max-width: 1000px;
     }
 
     .summary {
