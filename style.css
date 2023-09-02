@@ -3,6 +3,23 @@
     padding: 0px;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #fcfc;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #f9004d;
+}
+
 .navbar {
     height: 100vh;
     width: 100%;
@@ -11,6 +28,7 @@
     background-position: center;
     position: relative;
     font-family: 'Fira Sans', sans-serif;
+    overflow: hidden;
 }
 
 .navbar::after {
@@ -28,7 +46,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 10px;
     position: fixed;
     z-index: 3;
     background-color: #000000f1;
@@ -47,6 +64,19 @@ span {
     color: #f9004d;
 }
 
+.topnav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkedIn {
+    color: #d85252;
+    font-size: 30px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
 nav ul li {
     list-style-type: none;
     display: inline-block;
@@ -58,7 +88,7 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
-    padding-right: 40px;
+    padding-right: 30px;
 }
 
 nav ul li a:hover {
@@ -80,7 +110,7 @@ nav ul li a:hover {
 .content {
     position: absolute;
     top: 50%;
-    left: 8%;
+    padding: 50px;
     transform: translateY(-50%);
     font-family: 'Montserrat', sans-serif;
     z-index: 2;
@@ -93,7 +123,7 @@ nav ul li a:hover {
 }
 
 .hb {
-    color: #fcfc;
+    color: #f9004d;
     margin: 20px 0px 20px;
     font-size: 75px;
     text-shadow: 2em 3em 4em;
@@ -102,16 +132,17 @@ nav ul li a:hover {
 .hc {
     color: white;
     font-size: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .pretext {
-    max-width: 900px;
+    width: 100%;
+    max-width: 1200px;
     color: #fcfc;
     letter-spacing: 1px;
     line-height: 35px;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
     margin-bottom: 45px;
 }
 
@@ -122,22 +153,21 @@ nav ul li a:hover {
 }
 
 .about img {
-    height: auto;
-    max-width: 430px;
+    max-width: 450px;
     border-radius: 50px;
 }
 
 .main {
-    width: 1130px;
-    max-width: 95%;
+    width: 100%;
+    max-width: 1300px;
     margin: 0 auto;
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    justify-content: space-around;
+    gap: 100px;
 }
 
 .summary {
-    width: 500px;
+    width: 100%;
     font-family: 'Noto Serif', serif;
 }
 
@@ -161,6 +191,7 @@ nav ul li a:hover {
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
+    text-align: justify;
 }
 
 button {
@@ -300,7 +331,7 @@ button:hover {
     cursor: pointer;
 }
 
-label {
+.label {
     color: #d85252;
     font-weight: 500;
     letter-spacing: 2px;
